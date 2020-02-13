@@ -1,29 +1,28 @@
-# nama = "Hazi"
-# umur = 3
-# # print(nama)
-# # print(umur)
-# print(f'Nama saya {nama}, umur {umur} tahun.')
-
 # No 4
 
-# test_A = input()
-# num_T = int(test_A)
+test_A = input()
+num_T = int(test_A)
 
-# print(num_T)
-# print(type(num_T))
+def divisible(dictNum):
+    results = 0
+    for i in range(dictNum["A"], dictNum["B"]+1):
+        if i%dictNum["K"] == 0:
+            results+=1
+        else:
+            continue
+    return results
 
-# for i in range(1, num_T+1, 1):
-#     print(f'Case {i} ')
 
-# def storage(int):
-#     listNum = []
-#     for inputNum in range(1, num_T,1):
-#         num_A = int(input())
-#         num_B = int(input())
-#         num_K = int(input())
-        
-# storage(num_T)
-# 1, 10, 3, 8, 20, 4
-num_A = 1
-num_B = 10
-num_C = 3
+dictOutput = {}
+for i in range(1, num_T+1):
+    dictNum = {}
+    dictNum["A"] = int(input())
+    dictNum["B"] = int(input())
+    dictNum["K"] = int(input())
+    dictOutput[i] = divisible(dictNum)
+    # print(f'Case {i}: {divisible(dictNum)}')
+# print(dictOutput)
+# dictOutput = {1: 3, 2: 4}
+
+for i in range(1, len(dictOutput)+1):
+    print(f'Case {i}: {dictOutput[i]}')
