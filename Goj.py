@@ -99,5 +99,25 @@
 # 20 -> B
 # 4 -> K
 
-num_T = int(input())
-# print(num_T)
+num_T = input()
+
+print(num_T)
+print(type(num_T))
+
+# def divisive(num_T):
+#     loop = 0
+#     for x in range(1, num_T+1, 1):
+#         loop += 1
+#         # print(f"Case {loop_case} is 5")
+#         # print("Case", loop_case)
+#     return loop, num_T
+
+# print(divisive(num_T))
+
+# for i in range(1, num_T+1, 1):
+#     # print(f"Case {i}: 3")
+#     print("Case ",i)
+
+# for i in range(num_T):
+#     # print(f"Case {}: {}.".format(i, num_T+1)
+#     print(f'{i}')
